@@ -1,6 +1,45 @@
-body{
-    /*height: 100vh;
-    width: 100vw;*/
+*{
+    margin: 0;
+}
+
+.nav{
+    width: 10px;
+    height: 10px;
+    border: 3px solid black;
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body{
+    height: 100vh;
+    width: 100vw;
     margin: 0;
     background-image: url(./Imagem\ fundo.png);
     background-repeat: no-repeat;
@@ -16,8 +55,4 @@ body{
     margin: 0;
     background-color: black;
     position: center;
-}
-
-.text{
-    
-}
+}*/
