@@ -1,12 +1,21 @@
 *{
     margin: 0;
+    
 }
 
-.nav{
-    width: 10px;
-    height: 10px;
-    border: 3px solid black;
-    background-color: blueviolet;
+.na{
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    background: rgb(17,2,17) url(./All\ TECH2.png) no-repeat left / contain;
+}
+
+.capa{
+    width: auto;
+    height: 600px;
+    background: url(./Imagem\ central.png) no-repeat;
+    background-size: 100%;
 }
 
 
@@ -55,4 +64,11 @@
     margin: 0;
     background-color: black;
     position: center;
+
+    /*background-color: rgb(17, 2, 17);
+    background-image: url(./All\ TECH2.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background: linear-gradient(rgb(17,2,17), rgb(180, 166, 166), violete);
 }*/
