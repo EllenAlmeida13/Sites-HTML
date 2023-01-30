@@ -2,25 +2,22 @@ body{
     /*height: 100vh;
     width: 100vw;*/
     margin: 0;
-    /*background-image: url(./Imagem\ fundo.png);
+    background-image: url(./Imagem\ fundo.png);
     background-repeat: no-repeat;
-    background-blend-mode: luminosity;*/
+    background-blend-mode: luminosity;
+    background-size: 100%;
+    height: 1000px;
 }
 
 .box {
-    /*height: calc(100%);
+    align-self: center;
+    height: calc(30%);
     width: 100%;
     margin: 0;
-    background-image: url(./Imagem\ fundo.png);
-    background-repeat: no-repeat;
-    background-origin: border-box;*/
+    background-color: black;
+    position: center;
 }
 
-#container-imagem {
-
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-image: url(./Imagem\fundo.png);
+.text{
     
 }
