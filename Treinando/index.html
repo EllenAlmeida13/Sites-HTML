@@ -17,8 +17,10 @@
     <a href=" "> </a> .. link
  </bory>
 </html>
+
+ficar de olho nos sites: https://caniuse.com
 -->
-<!DOCTYPE html>,
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,46 +33,145 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
+<body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<frameset cols="100%">
-    <frame scr="frame_a.html">Hey</frame>
-    <h1>Hello World</h1>
+    <header>
+        <h1>Hello World</h1>
     <p>Welcome a new page!</p>
     <p>Page with objctive de conter conteúdos de aprendizados.</p>
-</frameset>
+    </header>
 
-<body>
     <h2>Sobre</h2>
     <p>Hi, i am <strong>Ellen</strong>, i am from Brazil.</p>
     This is my <a href="Https:diariodeambiente.wordpress.com">portfólio</a><br>
-<br>
-O que eu sei fazer? Veja:
-<br>
-<br>
-    <form action="mailto:ruthgaah13@gmail.com"> <!-- As informações serão enviadas para o email fornecido-->
-        What's yor name? <input type="name" placeholder="your name"><br>
-        <input type="checkbox"> Thrue? <br>
-        Data de nascimento: <input type="date"> <br>
-        Email <input type="email" placeholder="your email"> <br>
-        Password <input type="password" placeholder="your password"> <br>
-        <select name="Menu">
-            <option>Numero 1</option>
-            <option>Número 2</option>
-            <option>Número 3</option>
-        </select> <br> <!-- Cria lista de opção de menu-->
+ <br>
+
+ <a href="test.html">Clickar aqui</a>
+ <hr>O que eu sei fazer? Veja:
+ <br>
+ <br>
+    <form 
+      action="mailto:ruthgaah13@gmail.com" 
+      method="post" 
+      id="meu-form"
+      enctype="multipart/form-data"
+    > <!-- As informações serão enviadas para o email fornecido e o method post ocultará os dados, já o enctype aceitará os arquivos files-->
+        
+        What's yor name? 
+        <input 
+          name="name" 
+          type="name" 
+          placeholder="your name" 
+          form="meu-form"
+        ><br>
+        
+        <input 
+          type="checkbox"
+        > Thrue? 
+
+        <label for="subscribe">
+          <input 
+            type="checkbox"
+            name="subscribe" id="subscribe"
+            checked
+          > Receber notificações? 
+        </label>
+        <br>
+
+        <input type="hidden" name="id" value="8">
+        <br>
+        
+        <fieldset>
+            <legend>Casa comigo?</legend>
+
+            <label for="yep">Sim</label>
+
+            <input 
+              type="radio"
+              id="yep"
+              name="casar"
+              value="yes"
+              checked
+            >
+
+            <label for="no">Não</label>
+
+            <input 
+              type="radio" 
+              id="no"
+              name="casar"
+              value="no"
+              disabled
+            >
+        </fieldset>
+
+        <textarea 
+          name="casar" 
+          id="yes" 
+          cols="10" 
+          rows="5"
+          minlength="10"
+          maxlength="300"
+          title="Digite no máximo 300 caracteres"
+          wrap="soft"
+          placeholder="Digite sua mensagem"
+        ></textarea> <!--wrap (texto embrulhado) tudo na mesma linha-->
+        <br>
+
+        
+        <br>
+        
+        Data de nascimento: 
+        <input 
+          type="datetime-local"
+          value="yyyy-mm-dd"
+        > <br>
+        
+        Email 
+        <input 
+          type="email" 
+          placeholder="your email" 
+          minlength="8"
+          maxlength="300"
+          autocomplete="email"
+          title="Email com no min. 8 caracteres"
+        > <br>
+        
+        Password 
+        <input 
+          type="password" 
+          placeholder="your password" 
+          minlength="6" 
+          maxlength="8" 
+          pattern="[0-9a-zA-F]" 
+          title="Coloque de 0 a 9 e de A a Z, min 4 e máx 8"
+          inputmode="numeric"
+          autocomplete="new-password"
+        > <!--min e max delimitam a quantidade de caracteres na senha, inputmode abre o teclado numerico no telefone-->
+        <br>
+
+        Anexe um arquivo:
+        <input 
+          type="file"
+          accept=".doc, image/*"
+          multiple
+        > <!-- Aceita todo tipo de imagem e apenas o .doc-->
+        <br>
+
+        Escolha uma cor:
+        <input type="color">
+
+        <br>
+        <label for="Menu" id="number">Escola um Número:</label>
+            <select name="Menu" id="number">
+                <option value="">Selecione um Número</option>
+                <option>Numero 1</option>
+                <option>Número 2</option>
+                <option>Número 3</option>
+            </select> <br> <!-- Cria lista de opção de menu-->
+        
+        <br>
+
         <button>Login</button><br>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
@@ -78,8 +179,12 @@ O que eu sei fazer? Veja:
 
     </form>
     <br>
+    
+    <form action="" method="get">
 
+    </form>
 
+    <br>
     <table border="3" bordercolor="blue" bgcolor="" align="center" cellspacing="5"> <!-- Bgcolor define a cor de fundo -->
         <caption><em>This is a Simple table:</em></caption>
         <tr bgcolor="pink">
@@ -142,6 +247,70 @@ O que eu sei fazer? Veja:
             </tr>
         </tbory>
     </table>
+    <br>
 
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+
+            <label for="">Nome</label>
+            <input type="name">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </fieldset>
+    </form>
+    <br>
+
+    <label form="Nome">Nome</label> <!-- Torna o site semântico-->
+    <input id="Nome" type="text">
+    <br>
+    <br>
+
+    <input 
+      type="text"
+      list="fruitsdata"
+      placeholder="Escolha uma fruta"/>
+
+    <datalist id="fruitsdata">
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Mango</option>
+        <option>Orange</option>
+        <option>Cherry</option>
+    </datalist>
+    
+    <form action="">
+        <input 
+          type="search" 
+          name="q" 
+          id="fruitsdata" 
+          aria-label="Campo de pesquisa: Escolha uma fruta"
+          pattern="[0-9]{2}"
+          title="Digite um ID: 12"
+        >
+        <button>Pesquisar</button>
+    </form>
+
+    <form action="">
+        <input 
+          type="number" 
+          min="2"
+          max="10"
+        >
+        <button>Pesquisar</button>
+    </form>
+    
+    <label for="valor">10</label>
+    <input 
+      type="range"
+      min="10"
+      max="50"
+      step="10"
+      id="valor"
+    >
+    <label for="valor">50</label>
+
+    <br>
+    <br> 
 </body>
 </html>
