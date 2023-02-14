@@ -1,0 +1,122 @@
+
+*{
+    margin: 0;
+}
+
+/*Imagem do lado direito*/
+#part2 img{
+    position: fixed;
+    width: 1175px;
+    left: 370px;
+}
+
+/*editar a caixa do lado esquerdo*/
+.container-esquerdo{
+    position: fixed;
+    background-color: #121214;
+    width: 720px;
+    height: 780px;
+}
+
+/*editar a logo*/
+#part .logo img{
+    top: 50px;
+    width: 389px;
+    left: 30px;
+    position: relative;
+}
+
+/*editar a caixa de texto principal*/
+#part .text{
+    position: relative;
+    left: 36px;
+    top: 130px;
+}
+
+/*editar o título*/
+#part .text h1{
+    color: #04D361;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+}
+
+/*editar o subtítulo*/
+#part .text h4{
+    color: #E1E1E6;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+}
+
+/*editar o parágrafo da caixa de texto*/
+#part .text p{
+    font-family: 'Work Sans', sans-serif;
+    color: #E1E1E6;
+    font-size: 15px;
+}
+
+/*editar o formulário*/
+.form{
+    position: relative;
+    height: 84px;
+    left: 36px;
+    top: 160px;
+}
+
+.form #titulo{
+    color: #a8a8a8;
+}
+
+.form #rec{
+    height: 49.5px;
+    width: 1px;
+    background-color: #04D361;
+}
+
+.form #e-mail{
+    position: relative;
+    width: 798px;
+    height: 50px;
+    bottom: 55px;
+    left: 5px;
+}
+
+.form button{
+    background-color: #8257e5;
+    border-color: #8257e5;
+    position: relative;
+    height: 54px;
+    width: 54px;
+    left: 759px;
+    bottom: 109px;
+}
+
+.form button img{
+    position: relative;
+    width: 22px;
+    width: 22px;
+    top: 2px;
+
+}
+
+/*editar a segunda caixa de texto*/
+.text2{
+    position: relative;
+    left: 36px;
+}
+
+.text2 a{
+    color: #8257e5;
+    position: relative;
+    top: 200px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.text2 a img{
+    color: #8257e5;
+    position: relative;
+    top: 8px;
+}
+
+
